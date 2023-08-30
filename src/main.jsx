@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./App";
-import { store } from "./store";
-import { Provider } from "react-redux";
+import { BandNamesApp } from "./BandNamesApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Provider store={store}> 
-      <App /> 
-  </Provider>
+  <React.StrictMode>
+    <BandNamesApp />
+  </React.StrictMode>
 );
